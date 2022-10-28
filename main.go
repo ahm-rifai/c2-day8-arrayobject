@@ -35,7 +35,6 @@ func main() {
 }
 
 
-// STRUCT TEMPLATE
 type Project struct {
 	ProjectName string
 	StartDate string
@@ -45,7 +44,6 @@ type Project struct {
 	Technologies []string
 }
 
-// LOCAL DATABASE
 var dataProject = []Project {
 	{
 		ProjectName:  "Grow Your Business With Mobile",
@@ -222,8 +220,7 @@ func deleteProject(w http.ResponseWriter, r *http.Request)  {
 
 
 
-// ADDITIONAL FUNCTION
-// GET DURATION
+
 func getDuration(startDate string, endDate string) string {
 
 	layout := "2006-01-02"
@@ -251,7 +248,6 @@ func getDuration(startDate string, endDate string) string {
 	return duration
 }
 
-// CHANGE DATE FORMAT
 func formatDate(InputDate string) string {
 
 	layout := "2006-01-02"
@@ -262,7 +258,6 @@ func formatDate(InputDate string) string {
 	return formated
 }
 
-// RETURN DATE FORMAT
 func returnDate(InputDate string) string {
 
 	layout := "02 January 2006"
